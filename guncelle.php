@@ -36,11 +36,11 @@
             );
             header("Location: listele.php");
         }
-    }
+    
     $siralamaSorgusu =
         mysqli_query($conn, "SELECT * FROM users WHERE id='$id'");
     $user = mysqli_fetch_array($siralamaSorgusu);
-    ?>
+    }?>
         <form method="POST" class="row-3">
 
             <div class="mb-3 row">
